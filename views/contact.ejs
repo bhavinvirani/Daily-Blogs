@@ -1,0 +1,25 @@
+<%- include("partials/header") -%>
+
+    <div class="container my-5" id="contectUs">
+        <h1> CONTACT US </h1>
+        <p>
+            <%= content %>
+        </p>
+
+        <div class="input">
+            <form action="">
+                <div class="form-row">
+                    <input type="text" class="form-control col mx-3 my-3" placeholder="Name">
+                    <input type="email" class="form-control col mx-3 my-3" placeholder="Email">
+                </div>
+                <div class="form-row">
+                    <input " type="number" class="form-control col mx-3 my-3" placeholder="Phone Number">
+                    <input type="text" class="form-control col mx-3 my-3" placeholder="Subject">
+                </div>
+                <textarea name="message" class="form-control" id="" cols="20" rows="10"></textarea><br>
+                <button type="submit" class="btn btn-lg btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <%- include("partials/footer") -%>
