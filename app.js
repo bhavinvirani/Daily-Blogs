@@ -94,13 +94,21 @@ app.get("/contact", (req, res) => {
   });
 });
 
-
+// login
+app.get("/login", (req, res) => {
+  res.render("login");
+});
+app.get("/signup", (req, res) => {
+  res.render("signup");
+});
 
 
 let port = process.env.PORT || 3000;
 app.listen(port, function () {
   console.log("Server started on port 3000");
 });
+
+
 
 
 

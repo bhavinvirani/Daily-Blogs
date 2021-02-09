@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="/css/styles.css"> <!-- css file -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> <!-- font awsome -->
 
-  <nav class="navbar navbar-default">
+        
+  <nav class="navbar navbar-fixed" id="nav_bar">
     <div class="container">
       <div class="navbar-header">
         <p class="navbar-brand"><a href="/">DAILY JOURNAL</a></p>
@@ -21,10 +22,10 @@
         <li id="about"><a href="/about">ABOUT US</a></li>
         <li id="contact"><a href="/contact">CONTACT US</a></li>
         <li>
-          <form action=""><button type="submit" class="btn">Login</button></form>
+          <form action="/login"><button type="submit" class="btn">Login</button></form>
         </li>
         <li>
-          <form action=""><button type="submit" class="btn">Sign Up</button></form>
+          <form action="/signup"><button type="submit" class="btn">Sign Up</button></form>
         </li>
       </ul>
     </div>
@@ -33,4 +34,4 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid">

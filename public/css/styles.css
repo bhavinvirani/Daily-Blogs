@@ -3,19 +3,38 @@
     padding: 0;
     margin: 0;
 }
+html,body {    
+    height: 100%;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+  }
+::-webkit-scrollbar {
+    display: none;
+}
 .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    margin: 65px 150px 20px 150px;
+    /* margin: 50px; */
 }
 
 /* navbar */
 .navbar {
-    padding-top: 15px;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    z-index:999;
+    padding-top: 6px;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
     font-size: 15px;
     letter-spacing: 3px;
+    background-color: #f5f5f5;
+}
+.navbar-fixed{
+    top: 0;
+    /* z-index: 100; */
+    position: fixed;
+    width: 100%;
 }
 .navbar-header a{
     color: #777777;
@@ -27,7 +46,7 @@
     cursor: pointer;
     transition: 0.3s;
 }
-.navbar-nav  li a:hover {
+.navbar-nav li a:hover {
     transition: 0.3s;
     color: #0bc29d !important;
 }
@@ -49,7 +68,21 @@
     transition: 0.3s;
 }
 
+/*  */
 
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
 
 
 /* footer */
@@ -63,7 +96,7 @@
 	bottom: 0;
 	width: 100%;
 	height: 40px;
-	background-color: #0bc29d;
+	background-color: #02886d;
 }
 .footer p {
 	margin-top: 12.5px;
@@ -81,3 +114,47 @@ a .social-icon {
     color: rgb(110, 110, 110);
     cursor: pointer;
 }
+
+
+/* login-signup */
+
+  .form-signin .checkbox {
+    font-weight: 400;
+    margin-left:auto ;
+  }
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+  }
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  .form-signin input[type="text"] {
+      margin-bottom: -1px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
