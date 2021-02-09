@@ -38,6 +38,19 @@
 
 
 
+/* btn */
+.btn{
+    margin: 10px 3px;
+    background-color: rgb(108, 167, 219);
+}
+.btn:hover{
+    background-color:rgb(9, 82, 146);
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+
 
 /* footer */
 .footer-padding {
@@ -57,6 +70,9 @@
     font-size: 15px;
     font-weight:400;
     color: #fff;
+}
+a .social-icon {
+    color: rgb(32, 32, 32);
 }
 .social-icon {
     margin: 8px 8px;
